@@ -52,13 +52,6 @@ function question2() {
             var letter = policyString[1].charAt(0);
             var password = policyString[2];
 
-            console.log('pw1', password.charAt(position1-1))
-            console.log(position1)
-            console.log('pw2', password.charAt(position2-1))
-            console.log(position2)
-            console.log('letter', letter)
-            console.log(password)
-
             if (password.charAt(position1-1) == letter && password.charAt(position2-1) !== letter || 
                 password.charAt(position1-1) !== letter && password.charAt(position2-1) == letter) {
                 count ++;
