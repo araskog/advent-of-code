@@ -2,8 +2,7 @@ const fs = require('fs');
 
 const day1 = () => {
     fs.readFile('./day1.txt', (err, data) => {
-        const depths = data.toString();
-        const depthsArray = depths.split('\n').map((i) => Number(i));
+        const depthsArray = data.toString().split('\n').map((i) => Number(i));
         
         const sum = depthsArray.reduce((acc, current, i, array) => {
             if (current > array[i - 1]){
